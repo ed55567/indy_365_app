@@ -19,7 +19,7 @@ csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 
 require "csv"
 
-csv_text = File.read(Rails.root.join("lib", "seeds", "area-agency-on-aging.csv"))
+csv_text = File.read(Rails.root.join("lib", "seeds", "health-coverage-services.csv"))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 csv.each do |row|
   puts row.to_hash["Service Type"], ["Provider Name"], ["Address"], ["City"], ["ZipCode"], ["Latitude"], ["Longitude"]
@@ -27,7 +27,7 @@ end
 
 require "csv"
 
-csv_text = File.read(Rails.root.join("lib", "seeds", "area-agency-on-aging.csv"))
+csv_text = File.read(Rails.root.join("lib", "seeds", "health-coverage-services.csv"))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 csv.each do |row|
   t = Service.new
