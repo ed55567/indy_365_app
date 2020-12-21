@@ -1,0 +1,15 @@
+{
+  service_id: @service.service_id,
+  service_type: @service.service_type,
+  name: @service.name,
+  address: @service.address,
+  city: @service.city,
+  zipcode: @service.zipcode,
+  county: @service.county,
+  phone: @service.phone,
+  website: @service.website,
+  email: @service.email,
+  description: @service.description,
+  latitude: @service.latitude,
+  longitude: @service.longitude,
+}
