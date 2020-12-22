@@ -6,19 +6,19 @@ class Api::ServicesController < ApplicationController
 
   def create
     @service = Service.new(
-    name: params[:name],
-    service_id: params.[:service_id],
-    service_type: params.[:service_type],
-    address: params.[:address],
-    city: params.[:city],
-    zipcode: params.[:zipcode],
-    county: params.[:county],
-    phone: params.[:phone],
-    website: params.[:website],
-    email: params.[:email],
-    description: params.[:description],
-    latitude: params.[:latitude],
-    longitude: params.[:longitude]
+      name: params[:name],
+      service_id: params[:service_id],
+      service_type: params[:service_type],
+      address: params[:address],
+      city: params[:city],
+      zipcode: params[:zipcode],
+      county: params[:county],
+      phone: params[:phone],
+      website: params[:website],
+      email: params[:email],
+      description: params[:description],
+      latitude: params[:latitude],
+      longitude: params[:longitude],
     )
     @service.save
     render "show.json.jb"
@@ -50,7 +50,6 @@ class Api::ServicesController < ApplicationController
   def destroy
     service = Service.find_by(id: params[:id])
     service.destroy
-    render json: {message: "Service successfully destroyed."}
+    render json: { message: "Service successfully destroyed." }
   end
-
 end
