@@ -1,5 +1,6 @@
 @services.map do |service|
   {
+    id:service.id,
     service_id: service.service_id,
     service_type: service.service_type,
     name: service.name,

@@ -30,7 +30,7 @@ class Api::ServicesController < ApplicationController
   end
 
   def update
-    @pservice = Service.find_by(id: params[:id])
+    @service = Service.find_by(id: params[:id])
     @service.name = params[:name] || @service.name
     @service.service_type = params[:service_type] || @service.service_type
     @service.address = params[:address] || @service.address
