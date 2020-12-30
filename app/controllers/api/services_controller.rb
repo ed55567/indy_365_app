@@ -49,7 +49,7 @@ class Api::ServicesController < ApplicationController
 
   def destroy
     service = Service.find_by(id: params[:id])
-    service.destroy
+    service.destroyavailable chat
     render json: { message: "Service successfully destroyed." }
   end
 end
