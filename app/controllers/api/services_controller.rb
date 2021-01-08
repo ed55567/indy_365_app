@@ -20,7 +20,7 @@ class Api::ServicesController < ApplicationController
       latitude: params[:latitude],
       longitude: params[:longitude],
     )
-    @service.save
+    @service.save!
     render "show.json.jb"
   end
 
