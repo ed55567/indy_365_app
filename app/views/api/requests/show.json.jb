@@ -1,0 +1,11 @@
+{
+  fname: @request.fname,
+  lname: @request.lname,
+  email: @request.email,
+  phone: @request.phone,
+  address: @request.address,
+  city: @request.city,
+  zipcode: @request.zipcode,
+  servicetype: @request.servicetype
+  description: @request.description,
+}
