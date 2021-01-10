@@ -9,7 +9,7 @@ class Api::RequestsController < ApplicationController
       city: params[:city],
       zipcode: params[:zipcode],
       servicetype: params[:servicetype],
-      description: params[:description],
+      servicedescription: params[:servicedescription],
     )
     @request.save!
     render "show.json.jb"

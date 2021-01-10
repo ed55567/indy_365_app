@@ -6,6 +6,6 @@
   address: @request.address,
   city: @request.city,
   zipcode: @request.zipcode,
-  servicetype: @request.servicetype
-  description: @request.description,
+  servicetype: @request.servicetype,
+  servicedescription: @request.servicedescription,
 }
