@@ -14,4 +14,9 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
     post "/requests" => "requests#create"
   end
+
+  namespace :address_search do
+    get "expand", to: "expand"
+    get "parse", to: "parse"
+  end
 end
