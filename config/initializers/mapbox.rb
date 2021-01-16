@@ -1,1 +1,1 @@
-Mapbox.access_token = VUE_APP_MY_API_KEY
+Mapbox.access_token = RUBY_APP_MY_API_KEY
