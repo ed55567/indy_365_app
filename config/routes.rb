@@ -13,6 +13,9 @@ Rails.application.routes.draw do
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
     post "/requests" => "requests#create"
+
+    get "/requests" => "requests#create"
+    get "/home" => "home#index"
   end
 
   namespace :address_search do
