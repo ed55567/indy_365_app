@@ -26,17 +26,17 @@ class Api::AddressSearchController < ApplicationController
     params.permit(:a, :latitude, :longitude)
   end
 
-  json.array! @addresses
+  # json.array! @addresses
 
-  RSpec.describe "Address Search" do
-    it "parses an address and returns latitude and longitude" do
-      get "/api/v1/address_search/expand", params: { a: "401 B St, San Diego CA" }
-      expect(response).to be_successful
-    end
+  # RSpec.describe "Address Search" do
+  #   it "parses an address and returns latitude and longitude" do
+  #     get "/api/v1/address_search/expand", params: { a: "401 B St, San Diego CA" }
+  #     expect(response).to be_successful
+  #   end
 
-    it "parses latitude and longitude and returns an address" do
-      get "/api/v1/address_search/parse", params: { longitude: 127.0, latitude: -43.64 }
-      expect(response).to be_successful
-    end
-  end
+  #   it "parses latitude and longitude and returns an address" do
+  #     get "/api/v1/address_search/parse", params: { longitude: 127.0, latitude: -43.64 }
+  #     expect(response).to be_successful
+  #   end
+  # end
 end
