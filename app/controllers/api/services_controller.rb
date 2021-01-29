@@ -4,9 +4,9 @@ class Api::ServicesController < ApplicationController
     render "index.json.jb"
   end
 
-  def index
-    render :file => "public/index.html"
-  end
+  # def index
+  #   render :file => "public/index.html"
+  # end
 
   def create
     @service = Service.new(

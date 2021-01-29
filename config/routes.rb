@@ -13,5 +13,7 @@ Rails.application.routes.draw do
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
     post "/requests" => "requests#create"
+
+    get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: "public/index.html")]] }
   end
 end
