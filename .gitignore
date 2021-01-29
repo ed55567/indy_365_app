@@ -6,7 +6,6 @@
 
 #Inside the .gitignore file
 
-.env
 
 # Ignore bundler config.
 /.bundle
