@@ -43,5 +43,4 @@ gem 'rack-cors'
 gem 'jb'
 gem 'geocoder'
 gem 'jwt'
-gem 'mapbox-sdk', '~>2'
-gem 'dotenv-rails'
+
