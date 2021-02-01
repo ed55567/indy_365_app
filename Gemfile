@@ -45,4 +45,4 @@ gem 'geocoder'
 gem 'jwt'
 gem 'mapbox-sdk', '~>2'
 gem 'dotenv-rails'
-gem 'materialize-sass'
+

@@ -1,8 +1,10 @@
 {
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^2.0.2",
+    "materialize-css": "^1.0.0-rc.2",
     "vue-select": "^3.11.2"
   },
   "scripts": {
-    "start": "node index.js"}
+    "start": "node index.js"
+  }
 }
